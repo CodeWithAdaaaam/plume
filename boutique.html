@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boutique — Plume &amp; Moka</title>
+<meta name="description" content="La sélection du concept store Plume &amp; Moka à Casablanca, à commander sur WhatsApp.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Jost:wght@300;400;500&amp;family=Mrs+Saint+Delafield&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+<div class="wrap">
+<a class="logo" href="index.html"><img src="assets/logo.jpg" alt="Plume &amp; Moka Store"></a>
+<nav class="nav" id="nav" aria-label="Navigation principale">
+<a href="index.html">Accueil</a>
+<a href="boutique.html" aria-current="page">Boutique</a>
+<a href="workshops.html">Workshops</a>
+<a href="coffee.html">Coffee</a>
+<a href="galerie.html">Galerie</a>
+<a href="contact.html">Contact</a>
+</nav>
+<a class="btn btn-dark" href="workshops.html">Réserver</a>
+<button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
+</div>
+</header>
+
+<main>
+<section class="wrap pagehead">
+<div class="script">la boutique</div>
+<h1 class="display">STORE</h1>
+<div class="rule"></div>
+<p class="lead">Ajoutez vos coups de cœur à votre sélection puis envoyez-la en un clic sur WhatsApp. Nous confirmons la disponibilité et organisons le retrait ou la livraison.</p>
+</section>
+
+<section class="wrap">
+<div class="filters" id="filters" role="group" aria-label="Catégories">
+<button type="button" class="pill on" data-cat="Tout" aria-pressed="true">Tout</button>
+<button type="button" class="pill" data-cat="Papeterie" aria-pressed="false">Papeterie</button>
+<button type="button" class="pill" data-cat="Accessoires" aria-pressed="false">Accessoires</button>
+<button type="button" class="pill" data-cat="Déco" aria-pressed="false">Déco</button>
+<button type="button" class="pill" data-cat="Mode" aria-pressed="false">Mode</button>
+<button type="button" class="pill" data-cat="Coffee" aria-pressed="false">Coffee</button>
+</div>
+</section>
+
+<section class="wrap" style="padding-top:40px;padding-bottom:72px">
+<div class="grid cards" id="products" style="gap:32px 24px"></div>
+</section>
+
+<section class="band">
+<div class="wrap section">
+<h2 class="title" style="text-align:center;margin-bottom:40px">Comment commander ?</h2>
+<div class="steps">
+<div class="step"><span class="n">1</span><h3>Choisissez</h3><p class="lead">Ajoutez les articles qui vous plaisent à votre sélection.</p></div>
+<div class="step"><span class="n">2</span><h3>Envoyez</h3><p class="lead">Votre sélection part en un message WhatsApp pré-rempli.</p></div>
+<div class="step"><span class="n">3</span><h3>Récupérez</h3><p class="lead">Retrait en boutique, rue Ain Al Ati, ou livraison à Casablanca.</p></div>
+</div>
+</div>
+</section>
+</main>
+
+<div class="selbar" id="selbar">
+<div class="wrap">
+<span style="font-weight:300">Ma sélection : <strong id="selcount" style="font-weight:500">0 article</strong></span>
+<a class="btn btn-light" id="selsend" href="#" target="_blank" rel="noopener">Envoyer sur WhatsApp</a>
+</div>
+</div>
+
+<footer class="footer">
+<div class="wrap cols">
+<div><img src="assets/logo.jpg" alt="Plume &amp; Moka Store" style="width:110px;height:110px;border-radius:50%"></div>
+<div><h3>Horaires</h3><span>Lundi : 14h – 19h30</span><span>Mardi – Samedi : 10h – 19h30</span><span>Dimanche : fermé</span></div>
+<div><h3>Adresse</h3><span>6, rue Ain Al Ati</span><span>Casablanca, Maroc</span><a href="contact.html">Itinéraire</a></div>
+<div><h3>Contact</h3><a href="#" data-wa="Bonjour Plume &amp; Moka !">WhatsApp</a><a href="https://www.instagram.com/plume_moka_store/" target="_blank" rel="noopener">Instagram</a><span>[EMAIL]</span></div>
+</div>
+<div class="wrap copy">© 2026 Plume &amp; Moka Store · Concept Store &amp; Studio</div>
+</footer>
+
+</body>
+</html>

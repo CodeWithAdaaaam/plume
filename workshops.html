@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workshops — Plume &amp; Moka</title>
+<meta name="description" content="Réservez un atelier créatif au studio Plume &amp; Moka à Casablanca.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Jost:wght@300;400;500&amp;family=Mrs+Saint+Delafield&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+<div class="wrap">
+<a class="logo" href="index.html"><img src="assets/logo.jpg" alt="Plume &amp; Moka Store"></a>
+<nav class="nav" id="nav" aria-label="Navigation principale">
+<a href="index.html">Accueil</a>
+<a href="boutique.html">Boutique</a>
+<a href="workshops.html" aria-current="page">Workshops</a>
+<a href="coffee.html">Coffee</a>
+<a href="galerie.html">Galerie</a>
+<a href="contact.html">Contact</a>
+</nav>
+<a class="btn btn-dark" href="#reserver">Réserver</a>
+<button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
+</div>
+</header>
+
+<main>
+<section class="wrap pagehead">
+<div class="script">le studio</div>
+<h1 class="display">WORKSHOPS</h1>
+<div class="rule"></div>
+<p class="lead">Des ateliers créatifs en petit groupe, tout le matériel fourni, un café offert, et vous repartez avec votre création.</p>
+</section>
+
+<section class="wrap" style="padding-bottom:72px">
+<h2 class="label">1 · Choisissez votre atelier</h2>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px">
+<button type="button" class="atelier" data-v="Peinture sur céramique" aria-pressed="true"><span class="ph">[Photo atelier]</span><span class="body"><span class="t">Peinture sur céramique</span><span class="x">Décorez votre tasse ou assiette, cuite et prête à récupérer.</span><span class="m">2h · 8 places · [PRIX] DH</span></span></button>
+<button type="button" class="atelier" data-v="Bougies parfumées" aria-pressed="false"><span class="ph">[Photo atelier]</span><span class="body"><span class="t">Bougies parfumées</span><span class="x">Composez votre parfum et coulez votre bougie dans un contenant au choix.</span><span class="m">2h · 10 places · [PRIX] DH</span></span></button>
+<button type="button" class="atelier" data-v="Bijoux en perles" aria-pressed="false"><span class="ph">[Photo atelier]</span><span class="body"><span class="t">Bijoux en perles</span><span class="x">Bracelets, colliers ou bijoux de téléphone à votre image.</span><span class="m">1h30 · 8 places · [PRIX] DH</span></span></button>
+<button type="button" class="atelier" data-v="Calligraphie moderne" aria-pressed="false"><span class="ph">[Photo atelier]</span><span class="body"><span class="t">Calligraphie moderne</span><span class="x">Les bases du brush lettering, pour vos cartes et carnets.</span><span class="m">2h · 10 places · [PRIX] DH</span></span></button>
+</div>
+</section>
+
+<section class="band" id="reserver" style="scroll-margin-top:90px">
+<div class="wrap section booking" id="booking">
+<div class="form">
+<div>
+<h2 class="label">2 · Choisissez une date</h2>
+<div role="group" aria-label="Dates disponibles" style="display:flex;flex-wrap:wrap;gap:10px">
+<button type="button" class="datepill" data-v="Sam. [DATE] · 11h" aria-pressed="true">Sam. [DATE] · 11h</button>
+<button type="button" class="datepill" data-v="Sam. [DATE] · 15h" aria-pressed="false">Sam. [DATE] · 15h</button>
+<button type="button" class="datepill" data-v="Mer. [DATE] · 17h" aria-pressed="false">Mer. [DATE] · 17h</button>
+<button type="button" class="datepill" data-v="Sam. [DATE] · 11h (sem. suivante)" aria-pressed="false">Sam. [DATE] · 11h</button>
+</div>
+</div>
+<div>
+<h2 class="label">3 · Participants</h2>
+<div class="stepper">
+<button type="button" id="dec" aria-label="Retirer un participant">−</button>
+<span id="count" aria-live="polite">1</span>
+<button type="button" id="inc" aria-label="Ajouter un participant">+</button>
+</div>
+</div>
+<div>
+<h2 class="label">4 · Vos coordonnées</h2>
+<div class="fields">
+<label>Nom complet<input type="text" id="fname" autocomplete="name" placeholder="Votre nom"></label>
+<label>Téléphone<input type="tel" id="fphone" autocomplete="tel" placeholder="06 00 00 00 00"></label>
+</div>
+</div>
+</div>
+<aside>
+<div class="script" style="font-size:48px;color:var(--gold)">Récapitulatif</div>
+<div class="recap">
+<div><span>Atelier</span><span id="r-at" style="text-align:right"></span></div>
+<div><span>Date</span><span id="r-date" style="text-align:right"></span></div>
+<div><span>Participants</span><span id="r-n"></span></div>
+<div><span>Total</span><span>[PRIX] DH</span></div>
+</div>
+<a class="btn btn-light" id="book" href="#" target="_blank" rel="noopener">Confirmer sur WhatsApp</a>
+<p style="font-size:13px;line-height:1.6;color:#CFC4B5">Votre place est confirmée après notre réponse. Annulation gratuite jusqu'à 48h avant l'atelier.</p>
+</aside>
+</div>
+</section>
+
+<section class="wrap section split">
+<div><img src="assets/interieur.webp" alt="Le studio Plume &amp; Moka" style="width:100%;height:clamp(300px,45vw,460px);object-fit:cover"></div>
+<div class="stack">
+<div class="eyebrow">Événements privés</div>
+<h2 class="title">Privatisez le studio</h2>
+<p class="lead">Anniversaire, EVJF, baby shower ou team building : nous créons un atelier sur mesure pour votre groupe, café et douceurs inclus.</p>
+<a class="btn" href="#" data-wa="Bonjour Plume &amp; Moka ! Je souhaite privatiser le studio pour un événement." style="align-self:flex-start">Demander un devis</a>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="wrap cols">
+<div><img src="assets/logo.jpg" alt="Plume &amp; Moka Store" style="width:110px;height:110px;border-radius:50%"></div>
+<div><h3>Horaires</h3><span>Lundi : 14h – 19h30</span><span>Mardi – Samedi : 10h – 19h30</span><span>Dimanche : fermé</span></div>
+<div><h3>Adresse</h3><span>6, rue Ain Al Ati</span><span>Casablanca, Maroc</span><a href="contact.html">Itinéraire</a></div>
+<div><h3>Contact</h3><a href="#" data-wa="Bonjour Plume &amp; Moka !">WhatsApp</a><a href="https://www.instagram.com/plume_moka_store/" target="_blank" rel="noopener">Instagram</a><span>[EMAIL]</span></div>
+</div>
+<div class="wrap copy">© 2026 Plume &amp; Moka Store · Concept Store &amp; Studio</div>
+</footer>
+
+</body>
+</html>
